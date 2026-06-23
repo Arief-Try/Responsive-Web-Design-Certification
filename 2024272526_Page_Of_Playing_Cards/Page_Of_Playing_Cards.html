@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playing Cards</title>
+  <style>
+
+    body {
+      background-color: #d1c4e9;
+      margin: 0;
+      padding: 20px;
+      font-family: sans-serif;
+    }
+
+    #playing-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      width: 180px;
+      height: 260px;
+      background-color: white;
+      border: 1px solid #000;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .left {
+      align-self: flex-start;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .middle {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      font-size: 2.5rem;
+      align-items: center;
+    }
+
+    .right {
+      align-self: flex-end;
+      font-weight: bold;
+      font-size: 1.2rem;
+      transform: rotate(180deg); 
+    }
+
+    .red {
+      color: red;
+    }
+
+
+    .card span {
+      display: block;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <main id="playing-cards">
+
+    <div class="card">
+      <div class="left">A<span>♠</span></div>
+      <div class="middle">♠</div>
+      <div class="right">A<span>♠</span></div>
+    </div>
+
+    <div class="card">
+      <div class="left">2<span>♣</span></div>
+      <div class="middle">
+        <div>♣</div>
+        <div>♣</div>
+      </div>
+      <div class="right">2<span>♣</span></div>
+    </div>
+
+    <div class="card red">
+      <div class="left">3<span>♥</span></div>
+      <div class="middle">
+        <div>♥</div>
+        <div>♥</div>
+        <div>♥</div>
+      </div>
+      <div class="right">3<span>♥</span></div>
+    </div>
+
+  </main>
+
+</body>
+</html>
